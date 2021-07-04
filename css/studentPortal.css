@@ -1,0 +1,40 @@
+.details div {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  table {
+    width: 100%;
+  }
+  table td {
+    padding: 10px 20px;
+  }
+  td:first-child {
+    font-weight: 500;
+  }
+  
+  .boxStyle {
+    border: 1px solid #ff0000;
+    box-shadow: 0px 0px 8px 5px #ff6600;
+    margin: 30px 15px;
+    height: 376px;
+  }
+  .leaveForm{
+    margin-top: 60  px;
+    
+  }
+  .input{
+    margin-left: 20px;
+    margin-top: 12px;
+  }
+  .btnsubmit{
+    margin-top: 12px;
+  }
+  .secondDiv
+  {
+    width: 1197px;
+  }
+  .grade
+  {
+    overflow: scroll;
+  }

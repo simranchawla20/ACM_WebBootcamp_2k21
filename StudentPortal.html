@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>StudentPortal</title>
+    <meta name="description" content="home page">
+    <meta name="keywords" content="home page">
+    
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/studentPortal.css">
+    <script>
+      function feedbackClick()
+      {
+        alert("ThankYou for Your Feedback.");
+      }
+    </script>
+    <script>
+      function leaveClick()
+      {
+        alert("Request for leave sent!!");
+      }
+    </script>
+  </head>
+  <body>
+
+    <div class="probootstrap-search" id="probootstrap-search">
+      <a href="#" class="probootstrap-close js-probootstrap-close"><i class="icon-cross"></i></a>
+      <form action="#">
+        <input type="search" name="s" id="search" placeholder="Search a keyword and hit enter...">
+      </form>
+    </div>
+    
+    <div class="probootstrap-page-wrapper">
+      <!-- navbar -->
+      
+      <div class="probootstrap-header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-9 probootstrap-top-quick-contact-info">
+              <span><i class="icon-location2"></i>Industrial Area phase-2,CHANDIGARH</span>
+              <span><i class="icon-phone2"></i>170072-68490</span>
+              <span><i class="icon-mail"></i>dummy@faraday.edu.in</span>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 probootstrap-top-social">
+              <ul>
+                <li><a href="#"><i class="icon-twitter"></i></a></li>
+                <li><a href="#"><i class="icon-facebook2"></i></a></li>
+                <li><a href="#"><i class="icon-instagram2"></i></a></li>
+                <li><a href="#"><i class="icon-youtube"></i></a></li>
+                <li><a href="#" class="probootstrap-search-icon js-probootstrap-search"><i class="icon-search"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-default probootstrap-navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <a title="Faraday University" href="index.html"><p style="font-style:italic; margin-top: 31px;font-size: 3vw;"><b>Faraday</b>University</p></a>
+          </div>
+
+          <div id="navbar-collapse" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="UpcomingEvent.html">Events</a></li> 
+              <li><a href="login.html">Logout</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+       
+
+
+
+    <!-- Student-Portal-->
+
+
+    <div class="container-fluid row p-3 m-2">
+        <!-- details -->
+        <div class="col-md-7 d-flex flex-wrap boxStyle">
+            <!-- image -->
+            <div class="col-lg-5 p-3">
+                <img src="img/student.jpg" style="width: 100%;">
+            </div>
+            <!-- student details -->
+            <div class="col-lg-7 d-flex flex-wrap p-2 flex-column details">
+                <h2 style="text-decoration:underline;">Student Details</h2>
+                <div>
+                    <h3>Name</h3>
+                    <p>Simranjeet Kaur</p>
+                </div>
+                <div>
+                    <h3>Roll No</h3>
+                    <p>1910990578</p>
+                </div>
+                <div>
+                    <h3>Section</h3>
+                    <p>R</p>
+                </div>
+                <div>
+                    <h3>Branch</h3>
+                    <p>CSE</p>
+                </div>
+            </div>
+        </div>
+        <!-- announcements -->
+        <div class="col-md-4 col-12 boxStyle announce " >
+            <h2 style="text-decoration:underline;">Announcements</h2>
+            <marquee direction="up" scrollamount="9">
+                <p>marks are uploaded.</p>
+                <p>notice regarding last date of dues is uploaded.</p>
+                <p>there will be holiday tomorrow.</p>
+                <p>test for java is held on ---- date .</p>
+                <p>last date for prohect submission is uploaded.</p>
+            </marquee>
+        </div>
+    </div>
+
+    <div class="container-fluid row p-3 m-2 secondDiv">
+        <!-- leave -->
+        <div class="col-md-4 p-5 m-2 boxStyle text-center ">
+            <h2 style="text-decoration:underline;">Apply Leave</h2>
+            <div class="leaveForm">
+            <label >From:</label>
+            <input type="date" class="input">
+            <br>
+            <label >To:</label>
+            <input type="date" class="input">
+            <br>
+            <label>Reason:</label>
+            <input type="text" class="input">
+            <br>
+            <input type="submit" class="btnsubmit" onclick="leaveClick()">
+        </div>
+        </div>
+        <!-- grades -->
+        <div class="col-md-3 p-5 m-2 boxStyle grade">
+            <h2 style="text-decoration:underline;">Grade Card</h2>
+            <table>
+                <tr>
+                    <td>C-programming</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>BEE</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>BEE-Lab</td>
+                    <td>98</td>
+                </tr>
+                <tr>
+                    <td>Engineering Graphics</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>95</td>
+                </tr>
+                <tr>
+                  <td>Advanced C</td>
+                  <td>95</td>
+              </tr>
+              <tr>
+                  <td>DELD</td>
+                  <td>100</td>
+              </tr>
+              <tr>
+                  <td>Database</td>
+                  <td>100</td>
+              </tr>
+              <tr>
+                  <td>Advanced web technology</td>
+                  <td>90</td>
+              </tr>
+              <tr>
+                  <td>Operating System</td>
+                  <td>90</td>
+              </tr>
+                
+            </table>
+        </div>
+        <!-- feedback -->
+        <div class="col-md-4 p-5 m-2 boxStyle ">
+            <h2 style="text-decoration:underline;">Feedback Form</h2>
+              
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button  class="btn btn-primary" onclick="feedbackClick()">Submit</button>
+            
+        </div>
+    </div>
+    <!-- ---------------------------------------->
+    <!-- Modal -->
+    <!-- -------------------------------------- -->
+      
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form >
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<!-- Footer-->
+
+
+
+
+<section class="probootstrap-cta">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="probootstrap-animate fadeInRight probootstrap-animated" data-animate-effect="fadeInRight">Get your admission now!</h2>
+        <a href="#" role="button" class="btn btn-primary btn-lg btn-ghost probootstrap-animate fadeInLeft probootstrap-animated" data-animate-effect="fadeInLeft">Enroll</a>
+      </div>
+    </div>
+  </div>
+</section>
+      <footer class="probootstrap-footer probootstrap-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="probootstrap-footer-widget">
+                <h3>About Our University</h3>
+                <p>Faraday University in Chandigarh, has been founded by Dr. ABC Faraday and Dr. XYZ Faraday, who have been passionate teachers for more than 40 years now. Since inception, Faraday University has been different. Our students have been different.</p>
+                <h3>Social</h3>
+                <ul class="probootstrap-footer-social">
+                  <li><a href="#"><i class="icon-twitter"></i></a></li>
+                  <li><a href="#"><i class="icon-facebook"></i></a></li>
+                  <li><a href="#"><i class="icon-github"></i></a></li>
+                  <li><a href="#"><i class="icon-dribbble"></i></a></li>
+                  <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                  <li><a href="#"><i class="icon-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-md-push-1">
+              <div class="probootstrap-footer-widget">
+                <h3>Links</h3>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="UpcomingEvent.html">Events</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="probootstrap-footer-widget">
+                <h3>Contact Info</h3>
+                <ul class="probootstrap-contact-info">
+                  <li><i class="icon-location2"></i> <span>Industrial Area phase-2,CHANDIGARH</span></li>
+                  <li><i class="icon-mail"></i><span>dummy@faraday.edu.in</span></li>
+                  <li><i class="icon-phone2"></i><span>170072-68490</span></li>
+                </ul>
+              </div>
+            </div>
+           
+          </div>
+          <!-- END row -->
+          
+        </div>
+
+
+        <!-- copy-Right -->
+
+        <div class="probootstrap-copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 text-left">
+                <p>&copy; 2021 <a href="index.html">Faraday University</a>. All Rights Reserved. Designed &amp; Developed with <i class="icon icon-heart"></i> by <a href="index.html">Simran Chawla</a></p>
+              </div>
+              <div class="col-md-4 probootstrap-back-to-top">
+                <p><a href="#" class="js-backtotop">Back to top <i class="icon-arrow-long-up"></i></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <!-- END wrapper -->
+    
+
+    <script src="js/scripts.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/custom.js"></script>
+
+
+    <!--JavaScript of the center content-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+     
+  
+
+
+
+
+
+  </body>
+</html>
